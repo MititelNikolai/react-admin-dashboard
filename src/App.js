@@ -27,7 +27,7 @@ function App() {
 					<main className='content'>
 						<TopBar />
 						<Routes>
-							<Route path='/' element={<Dashboard />} />
+							<Route path='/react-admin-dashboard' element={<Dashboard />} />
 							<Route path='/team' element={<Team />} />
 							<Route path='/contacts' element={<Contacts />} />
 							<Route path='/invoices' element={<Invoices />} />
