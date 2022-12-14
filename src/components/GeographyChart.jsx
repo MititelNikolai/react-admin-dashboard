@@ -1,9 +1,9 @@
-import React from 'react'
-import { ResponsiveChoropleth } from '@nivo/geo'
-import { tokens } from '../theme'
 import { useTheme } from '@mui/material'
+import { ResponsiveChoropleth } from '@nivo/geo'
 import { geoFeatures } from '../data/mockGeoFeatures'
+import { tokens } from '../theme'
 import { mockGeographyData as data } from '../data/mockData'
+
 const GeographyChart = ({ isDashboard = false }) => {
 	const theme = useTheme()
 	const colors = tokens(theme.palette.mode)
@@ -48,7 +48,7 @@ const GeographyChart = ({ isDashboard = false }) => {
 			projectionTranslation={isDashboard ? [0.49, 0.6] : [0.5, 0.5]}
 			projectionRotation={[0, 0, 0]}
 			borderWidth={1.5}
-			borderColor='#fff'
+			borderColor='#ffffff'
 			legends={
 				!isDashboard
 					? [
@@ -69,7 +69,7 @@ const GeographyChart = ({ isDashboard = false }) => {
 									{
 										on: 'hover',
 										style: {
-											itemTextColor: colors.grey[100],
+											itemTextColor: '#ffffff',
 											itemOpacity: 1,
 										},
 									},

@@ -20,14 +20,14 @@ const LineChart = ({ isDashboard = false }) => {
 						text: {
 							fill: colors.grey[100],
 						},
-						ticks: {
-							line: {
-								stroke: colors.grey[100],
-								strokeWidth: 1,
-							},
-							text: {
-								fill: colors.grey[100],
-							},
+					},
+					ticks: {
+						line: {
+							stroke: colors.grey[100],
+							strokeWidth: 1,
+						},
+						text: {
+							fill: colors.grey[100],
 						},
 					},
 				},
